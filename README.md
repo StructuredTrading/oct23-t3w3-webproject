@@ -1,5 +1,11 @@
 # OCT23 T3W3 Web Project - Local Storage
 
+# Deployments
+
+- [GitHub Pages](https://alexstormwood.com/oct23-t3w3-webproject/src/index.html)
+- [Netlify](https://alexlocalstorageexample.netlify.app/)
+
+
 # Features
 
 1. Use local storage to persist CSS theme information
@@ -21,6 +27,3 @@
 1. Examples of CSS themes generated applied to HTML elements/components 
 2. Calendar & date to timestamp CSS themes 
 3. Donate/sponsorship button in website & GH repo 
-
-
-
