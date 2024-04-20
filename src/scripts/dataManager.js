@@ -23,7 +23,6 @@ function getStoredCssThemes(){
 }
 
 
-
 /**
  * Retrieve, assign, and return the latest stored page theme from the browser localstorage.
  * @date 'April 20th 2024, 10:22:38 am'
@@ -32,32 +31,38 @@ function getStoredCssThemes(){
  * @returns String. Should be "light" or "dark".
  */
 function getStoredPageTheme(){
-    pageTheme = localStorage.getItem("pageTheme")
-    return pageTheme;
+	pageTheme = localStorage.getItem("pageTheme");
+	return pageTheme;
 }
+
 
 // Create/Update localstorage
-function setCssThemesToStorage() {
-    let dataAsJasonString = JSON.stringify(cssThemes);
-    localStorage.setItem("cssThemes", dataAsJasonString)
+function setCssThemesToStorage(){
+	let dataAsJsonString = JSON.stringify(cssThemes);
+	localStorage.setItem("cssThemes", dataAsJsonString);
 }
 
-
-function setPageThemToStorage() {
-    localStorage.setItem("pageTheme", pageTheme);
+function setPageThemeToStorage(){
+	localStorage.setItem("pageTheme", pageTheme);
 }
+
 
 // Check if data exists,
 // if it does, retrieve it,
 // else, set default variables to localstorage
-
-if (localStorage.getItem("pageTheme") && localStorage.getItem("cssThemes").length > 0) {
-    getStoredCssThemes();
-    getStoredPageTheme();
+if (localStorage.getItem("pageTheme") && localStorage.getItem("cssThemes")?.length > 0){
+	getStoredCssThemes();
+	getStoredPageTheme();
 } else {
-    setCssThemesToStorage();
-    setPageThemToStorage();
+	setCssThemesToStorage();
+	setPageThemeToStorage();
 }
+
+
+
+
+
+
 
 
 
@@ -85,4 +90,10 @@ JSON.stringify(cssThemes);
 
 
 
+
+
+
 // Delete localstorage 
+
+
+
