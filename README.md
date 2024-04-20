@@ -2,8 +2,8 @@
 
 # Deployments
 
-- [GitHub Pages](https://alexstormwood.com/oct23-t3w3-webproject/src/index.html)
-- [Netlify](https://alexlocalstorageexample.netlify.app/)
+- [GitHub Pages](https://github.com/StructuredTrading/oct23-t3w3-webproject/blob/main/src/index.html)
+- [Netlify](https://samlocalstorageexample.netlify.app/)
 
 
 # Features
